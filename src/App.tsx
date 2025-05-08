@@ -188,7 +188,7 @@ function App() {
             <p className="text-sm">
               Want to know more about Extension?&nbsp;
               <a
-                href=""
+                href="https://github.com/nnitesh147/AI-Helper-Chrome-Extension#:~:text=Repository%20files%20navigation-,README,-Chrome%20Extension%20for"
                 className="text-blue-500 hover:underline"
                 target="_blank"
               >

@@ -8,7 +8,7 @@ export const useChromeStorage = () => {
 
     getKeyModel: async (model: ValidModel) => {
       const result = await chrome.storage.local.get(model);
-      return { model: model, apiKey: result[model] };
+      return { model: model, apiKey: result[model] ?? "" };
     },
 
     setSelectModel: async (model: ValidModel) => {
@@ -18,6 +18,10 @@ export const useChromeStorage = () => {
     selectModel: async () => {
       const result = await chrome.storage.local.get("selectedModel");
       return result["selectedModel"] as ValidModel;
+    },
+
+    clearAllModelKey: async () => {
+      await chrome.storage.local.clear();
     },
   };
 };

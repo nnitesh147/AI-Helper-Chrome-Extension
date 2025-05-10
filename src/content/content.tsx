@@ -67,8 +67,8 @@ const content = () => {
       className="dark z-50"
       style={{
         position: "fixed",
-        bottom: "30px",
-        right: "30px",
+        bottom: "10px",
+        right: "50px",
       }}
     >
       {!model || !apiKey ? (
